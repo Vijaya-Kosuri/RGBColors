@@ -15,9 +15,11 @@ struct APIView: View {
     VStack {
       
       if apiStore.loading {
-        ProgressBar(progress: $apiStore.downloadProgress)
-          .frame(height: 10)
-          .padding()
+        ProgressView()
+        // Commented out as there is no need of progress bar
+        //        ProgressBar(progress: $apiStore.downloadProgress)
+        //          .frame(height: 10)
+        //          .padding()
       }
       else {
         NavigationView {
