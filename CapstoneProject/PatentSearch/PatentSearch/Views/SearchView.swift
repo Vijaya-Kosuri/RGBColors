@@ -13,8 +13,9 @@ struct SearchView: View {
   @State private var searchText = ""
   @State var results: [OrganicResult] = []
   @State private var selectedresult: OrganicResult? = nil
-  @State private var isImageDetailViewPresented = false
   let placeholderImage = Image(systemName: "photo")
+  @State private var isDetailedViewPresented = false
+  
   
   
   var body: some View {
@@ -66,7 +67,7 @@ struct SearchView: View {
             Text(result.title)
               .font(.headline)
               .foregroundColor(.blue)
-              .lineLimit(2) // Adjust as needed
+              .lineLimit(2)
             
             HStack {
               Text(result.publicationNumber)
@@ -92,17 +93,18 @@ struct SearchView: View {
       .onTapGesture {
         searchPatents(query: searchText)
         selectedresult = result
-        isImageDetailViewPresented.toggle()
+        isDetailedViewPresented.toggle()
         
       }
       .onAppear {
         searchPatents(query: searchText)
       }
     }
-    .sheet(item: $selectedresult) { result in
-      DetailedView(result: result, onClose: {
-        selectedresult = nil
-      })
+    .sheet(isPresented: $isDetailedViewPresented) {
+      if let selectedresult = selectedresult {
+        DetailedView(result: selectedresult, onClose: {
+        }, isPresented: $isDetailedViewPresented)
+      }
     }
   }
   

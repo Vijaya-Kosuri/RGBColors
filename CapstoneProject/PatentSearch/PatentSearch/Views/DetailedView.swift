@@ -16,6 +16,7 @@ struct DetailedView: View {
   @State private var feedbackSubmitted: Bool = false
   @State private var rating: Int = 0
   @State private var saveLocally = false
+  @Binding var isPresented: Bool
   
   
   var body: some View {
@@ -98,15 +99,14 @@ struct DetailedView: View {
               resultsViewModel.saveResultsLocally(newResult: result)
             }
         }
-        //Spacer()
+ 
         
         Section(header: Text("Actions").font(.headline)) {
           
           NavigationLink(destination: AsyncPDFView(pdfURL: URL(string: result.pdf) ?? URL(string: "")!)) {
             Text("PDF View")
           }
-          
-          
+
           //          Button("Share") {
           //            sharePatent()
           //          }
@@ -142,13 +142,17 @@ struct DetailedView: View {
         }
       }
       
-      .navigationBarItems(leading: Button("Back") {
+      .navigationBarItems(leading: Button("< Back") {
+        isPresented = false
         onClose()
       })
       .onAppear {
         downloadImage()
       }
     }
+    .navigationBarBackButtonHidden(true)
+    .navigationBarHidden(true)
+    .navigationBarTitleDisplayMode(.inline)
   }
   
   func downloadImage() {
@@ -199,7 +203,7 @@ struct DetailedView: View {
       
       // Check for duplicates
       if uniqueIds.insert(newResult.id).inserted {
-        // Append the new result only if it's not a duplicate : Need to work
+        // Append the new result only if it's not a duplicate
         existingResults.append(newResult)
       }
       var data: Data

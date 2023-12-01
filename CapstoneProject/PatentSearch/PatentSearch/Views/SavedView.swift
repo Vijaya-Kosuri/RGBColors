@@ -13,7 +13,8 @@ struct SavedView: View {
   @State private var searchText = ""
   @ObservedObject var resultsViewModel = ResultsViewModel()
   @State private var selectedresult: OrganicResult? = nil
-  @State private var isImageDetailViewPresented = false
+  @State private var isDetailedViewPresented = false
+  
   let placeholderImage = Image(systemName: "photo")
   
   
@@ -53,15 +54,15 @@ struct SavedView: View {
               .resizable()
               .aspectRatio(contentMode: .fit)
               .cornerRadius(10)
-              .frame(width: 40, height: 40) // Set the size for all thumbnails
-              .border(Color(UIColor.systemGray), width: 1)// Add border around thumbnails
+              .frame(width: 40, height: 40)
+              .border(Color(UIColor.systemGray), width: 1)
           }
           
           VStack(alignment: .leading, spacing: 4) {
             Text(result.title)
               .font(.headline)
               .foregroundColor(.blue)
-              .lineLimit(2) // Adjust as needed
+              .lineLimit(2) 
             
             HStack {
               Text(result.publicationNumber)
@@ -86,19 +87,31 @@ struct SavedView: View {
       
       .onTapGesture {
         selectedresult = result
-        isImageDetailViewPresented.toggle()
+        isDetailedViewPresented.toggle()
       }
       
       .onAppear {
         resultsViewModel.loadResultsLocally()
       }
       
+      .sheet(isPresented: $isDetailedViewPresented) {
+        DetailedView(result: result, onClose: {
+          selectedresult = nil
+        }, isPresented: $isDetailedViewPresented)
+        }
+      
     }
-    .sheet(item: $selectedresult) { result in
-      DetailedView(result: result, onClose: {
-        selectedresult = nil
-      })
-    }
+//    .sheet(item: $selectedresult) { result in
+//      DetailedView(result: result, onClose: {
+//        selectedresult = nil
+//      })
+   // }
+//    .sheet(isPresented: $isDetailedViewPresented) {
+//      if let selectedresult = selectedresult {
+//        DetailedView(result: selectedresult, onClose: {
+//        }, isPresented: $isDetailedViewPresented)
+//      }
+//    }
   }
   
 }

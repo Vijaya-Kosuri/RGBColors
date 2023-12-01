@@ -7,7 +7,7 @@ struct AdvancedDisplayView: View {
   var results: [OrganicResult]
   @State private var searchText = ""
   @State var selectedresult: OrganicResult? = nil
-  @State private var isImageDetailViewPresented = false
+  @State private var isDetailedViewPresented = false
   let placeholderImage = Image(systemName: "photo")
   
   
@@ -62,7 +62,7 @@ struct AdvancedDisplayView: View {
               Text(result.title)
                 .font(.headline)
                 .foregroundColor(.blue)
-                .lineLimit(2) // Adjust as needed
+                .lineLimit(2) 
               
               HStack {
                 Text(result.publicationNumber)
@@ -87,16 +87,16 @@ struct AdvancedDisplayView: View {
         
         .onTapGesture {
           selectedresult = result
-          isImageDetailViewPresented.toggle()
+          isDetailedViewPresented.toggle()
           
         }
         .accessibility(identifier: "tapview")
         
-        .sheet(item: $selectedresult) { result in
+        .sheet(isPresented: $isDetailedViewPresented) {
           DetailedView(result: result, onClose: {
             selectedresult = nil
-          })
-        }
+          }, isPresented: $isDetailedViewPresented)
+          }
       }
       .navigationTitle("Search Results")
       

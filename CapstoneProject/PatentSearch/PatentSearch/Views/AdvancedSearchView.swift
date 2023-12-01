@@ -50,7 +50,6 @@ struct AdvancedSearchView: View {
             .opacity(0)
             
             Button(action: {
-              // Perform search based on the entered criteria
               advsearchPatents()
               showResults = true
             }) {

@@ -25,7 +25,6 @@ struct PDFViewWrapper: UIViewRepresentable {
     if let pdfDocument = PDFDocument(url: pdfURL) {
       uiView.document = pdfDocument
     } else {
-      // Handle the case when the PDF is not available
       uiView.document = nil
     }
   }

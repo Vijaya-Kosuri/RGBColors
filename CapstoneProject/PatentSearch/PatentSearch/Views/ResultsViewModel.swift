@@ -18,7 +18,7 @@ class ResultsViewModel: ObservableObject {
       var existingResults = results
       let encoder = JSONEncoder()
       encoder.outputFormatting = .prettyPrinted
-      //var existingResults: [OrganicResult] = loadResultsLocally()
+  
       
       print("existingResults: \(existingResults)")
       
