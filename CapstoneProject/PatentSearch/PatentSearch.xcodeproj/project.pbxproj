@@ -1,0 +1,689 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1681C1B92B08605500975691 /* PatentSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681C1B82B08605500975691 /* PatentSearchApp.swift */; };
+		1681C1BB2B08605500975691 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681C1BA2B08605500975691 /* ContentView.swift */; };
+		1681C1BD2B08605800975691 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1681C1BC2B08605800975691 /* Assets.xcassets */; };
+		1681C1C02B08605800975691 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1681C1BF2B08605800975691 /* Preview Assets.xcassets */; };
+		1681C1C92B08EA5800975691 /* PatentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681C1C82B08EA5800975691 /* PatentModel.swift */; };
+		1681C1CB2B08EC7F00975691 /* PatentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681C1CA2B08EC7F00975691 /* PatentStore.swift */; };
+		1681C1CD2B09A6A000975691 /* DetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681C1CC2B09A6A000975691 /* DetailedView.swift */; };
+		1681C1D02B09B9D000975691 /* apilist.json in Resources */ = {isa = PBXBuildFile; fileRef = 1681C1CF2B09B9D000975691 /* apilist.json */; };
+		1681C1D42B0FB13500975691 /* AdvancedSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681C1D32B0FB13500975691 /* AdvancedSearchView.swift */; };
+		1681C1D62B0FECEB00975691 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681C1D52B0FECEB00975691 /* SearchView.swift */; };
+		1681C1D82B0FF9AD00975691 /* AdvancedDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681C1D72B0FF9AD00975691 /* AdvancedDisplayView.swift */; };
+		1681C1DA2B1017A400975691 /* PatentFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681C1D92B1017A400975691 /* PatentFeedback.swift */; };
+		1681C1DC2B10197300975691 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681C1DB2B10197300975691 /* OnboardingView.swift */; };
+		1681C1E22B13F75D00975691 /* AsyncPDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681C1E12B13F75D00975691 /* AsyncPDFView.swift */; };
+		1681C1E42B140D8200975691 /* SavedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681C1E32B140D8200975691 /* SavedView.swift */; };
+		1681C1E82B146A0B00975691 /* ResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681C1E72B146A0B00975691 /* ResultsViewModel.swift */; };
+		1681C1EE2B15A13A00975691 /* patent_info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1681C1ED2B15A13A00975691 /* patent_info.plist */; };
+		1681C20B2B185FE300975691 /* PatentSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681C20A2B185FE300975691 /* PatentSearchTests.swift */; };
+		1681C2122B19807C00975691 /* SearchViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681C2112B19807C00975691 /* SearchViewTests.swift */; };
+		1681C2142B19837400975691 /* PatentFeedbackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681C2132B19837400975691 /* PatentFeedbackTests.swift */; };
+		1681C21C2B1988D600975691 /* PatentSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681C21B2B1988D600975691 /* PatentSearchUITests.swift */; };
+		1681C21E2B1988D600975691 /* PatentSearchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681C21D2B1988D600975691 /* PatentSearchUITestsLaunchTests.swift */; };
+		1681C2252B198E6B00975691 /* DetailedViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681C2242B198E6B00975691 /* DetailedViewTests.swift */; };
+		1681C2272B19A14C00975691 /* AdvancedSearchViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681C2262B19A14C00975691 /* AdvancedSearchViewTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1681C20C2B185FE300975691 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1681C1AD2B08605500975691 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1681C1B42B08605500975691;
+			remoteInfo = PatentSearch;
+		};
+		1681C21F2B1988D600975691 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1681C1AD2B08605500975691 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1681C1B42B08605500975691;
+			remoteInfo = PatentSearch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1681C1B52B08605500975691 /* PatentSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PatentSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1681C1B82B08605500975691 /* PatentSearchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatentSearchApp.swift; sourceTree = "<group>"; };
+		1681C1BA2B08605500975691 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1681C1BC2B08605800975691 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1681C1BF2B08605800975691 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1681C1C82B08EA5800975691 /* PatentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatentModel.swift; sourceTree = "<group>"; };
+		1681C1CA2B08EC7F00975691 /* PatentStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatentStore.swift; sourceTree = "<group>"; };
+		1681C1CC2B09A6A000975691 /* DetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedView.swift; sourceTree = "<group>"; };
+		1681C1CF2B09B9D000975691 /* apilist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = apilist.json; path = ../../../../Assignment07/Homework7/Homework7/Resources/apilist.json; sourceTree = "<group>"; };
+		1681C1D32B0FB13500975691 /* AdvancedSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedSearchView.swift; sourceTree = "<group>"; };
+		1681C1D52B0FECEB00975691 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		1681C1D72B0FF9AD00975691 /* AdvancedDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedDisplayView.swift; sourceTree = "<group>"; };
+		1681C1D92B1017A400975691 /* PatentFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatentFeedback.swift; sourceTree = "<group>"; };
+		1681C1DB2B10197300975691 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		1681C1E12B13F75D00975691 /* AsyncPDFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncPDFView.swift; sourceTree = "<group>"; };
+		1681C1E32B140D8200975691 /* SavedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedView.swift; sourceTree = "<group>"; };
+		1681C1E72B146A0B00975691 /* ResultsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewModel.swift; sourceTree = "<group>"; };
+		1681C1ED2B15A13A00975691 /* patent_info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = patent_info.plist; sourceTree = "<group>"; };
+		1681C1FD2B185B3100975691 /* Xcode.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = Xcode.app; path = ../../../../../../../Applications/Xcode.app; sourceTree = "<group>"; };
+		1681C2082B185FE300975691 /* PatentSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PatentSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1681C20A2B185FE300975691 /* PatentSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatentSearchTests.swift; sourceTree = "<group>"; };
+		1681C2112B19807C00975691 /* SearchViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewTests.swift; sourceTree = "<group>"; };
+		1681C2132B19837400975691 /* PatentFeedbackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatentFeedbackTests.swift; sourceTree = "<group>"; };
+		1681C2192B1988D600975691 /* PatentSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PatentSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1681C21B2B1988D600975691 /* PatentSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatentSearchUITests.swift; sourceTree = "<group>"; };
+		1681C21D2B1988D600975691 /* PatentSearchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatentSearchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1681C2242B198E6B00975691 /* DetailedViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedViewTests.swift; sourceTree = "<group>"; };
+		1681C2262B19A14C00975691 /* AdvancedSearchViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedSearchViewTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1681C1B22B08605500975691 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1681C2052B185FE300975691 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1681C2162B1988D600975691 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1681C1AC2B08605500975691 = {
+			isa = PBXGroup;
+			children = (
+				1681C1B72B08605500975691 /* PatentSearch */,
+				1681C2092B185FE300975691 /* PatentSearchTests */,
+				1681C21A2B1988D600975691 /* PatentSearchUITests */,
+				1681C1B62B08605500975691 /* Products */,
+				1681C1F42B184A9800975691 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1681C1B62B08605500975691 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1681C1B52B08605500975691 /* PatentSearch.app */,
+				1681C2082B185FE300975691 /* PatentSearchTests.xctest */,
+				1681C2192B1988D600975691 /* PatentSearchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1681C1B72B08605500975691 /* PatentSearch */ = {
+			isa = PBXGroup;
+			children = (
+				1681C1CE2B09B94900975691 /* Resources */,
+				1681C1C72B08EA2600975691 /* Models */,
+				1681C1C62B08EA1600975691 /* Views */,
+				1681C1B82B08605500975691 /* PatentSearchApp.swift */,
+				1681C1BC2B08605800975691 /* Assets.xcassets */,
+				1681C1BE2B08605800975691 /* Preview Content */,
+				1681C1ED2B15A13A00975691 /* patent_info.plist */,
+			);
+			path = PatentSearch;
+			sourceTree = "<group>";
+		};
+		1681C1BE2B08605800975691 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1681C1BF2B08605800975691 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1681C1C62B08EA1600975691 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1681C1BA2B08605500975691 /* ContentView.swift */,
+				1681C1CC2B09A6A000975691 /* DetailedView.swift */,
+				1681C1D72B0FF9AD00975691 /* AdvancedDisplayView.swift */,
+				1681C1D32B0FB13500975691 /* AdvancedSearchView.swift */,
+				1681C1D52B0FECEB00975691 /* SearchView.swift */,
+				1681C1DB2B10197300975691 /* OnboardingView.swift */,
+				1681C1E12B13F75D00975691 /* AsyncPDFView.swift */,
+				1681C1E32B140D8200975691 /* SavedView.swift */,
+				1681C1E72B146A0B00975691 /* ResultsViewModel.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1681C1C72B08EA2600975691 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1681C1C82B08EA5800975691 /* PatentModel.swift */,
+				1681C1CA2B08EC7F00975691 /* PatentStore.swift */,
+				1681C1D92B1017A400975691 /* PatentFeedback.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1681C1CE2B09B94900975691 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1681C1CF2B09B9D000975691 /* apilist.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1681C1F42B184A9800975691 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1681C1FD2B185B3100975691 /* Xcode.app */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1681C2092B185FE300975691 /* PatentSearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				1681C20A2B185FE300975691 /* PatentSearchTests.swift */,
+				1681C2112B19807C00975691 /* SearchViewTests.swift */,
+				1681C2132B19837400975691 /* PatentFeedbackTests.swift */,
+				1681C2242B198E6B00975691 /* DetailedViewTests.swift */,
+				1681C2262B19A14C00975691 /* AdvancedSearchViewTests.swift */,
+			);
+			path = PatentSearchTests;
+			sourceTree = "<group>";
+		};
+		1681C21A2B1988D600975691 /* PatentSearchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1681C21B2B1988D600975691 /* PatentSearchUITests.swift */,
+				1681C21D2B1988D600975691 /* PatentSearchUITestsLaunchTests.swift */,
+			);
+			path = PatentSearchUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1681C1B42B08605500975691 /* PatentSearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1681C1C32B08605800975691 /* Build configuration list for PBXNativeTarget "PatentSearch" */;
+			buildPhases = (
+				1681C1B12B08605500975691 /* Sources */,
+				1681C1B22B08605500975691 /* Frameworks */,
+				1681C1B32B08605500975691 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PatentSearch;
+			productName = PatentSearch;
+			productReference = 1681C1B52B08605500975691 /* PatentSearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1681C2072B185FE300975691 /* PatentSearchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1681C20E2B185FE300975691 /* Build configuration list for PBXNativeTarget "PatentSearchTests" */;
+			buildPhases = (
+				1681C2042B185FE300975691 /* Sources */,
+				1681C2052B185FE300975691 /* Frameworks */,
+				1681C2062B185FE300975691 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1681C20D2B185FE300975691 /* PBXTargetDependency */,
+			);
+			name = PatentSearchTests;
+			productName = PatentSearchTests;
+			productReference = 1681C2082B185FE300975691 /* PatentSearchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1681C2182B1988D600975691 /* PatentSearchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1681C2212B1988D700975691 /* Build configuration list for PBXNativeTarget "PatentSearchUITests" */;
+			buildPhases = (
+				1681C2152B1988D600975691 /* Sources */,
+				1681C2162B1988D600975691 /* Frameworks */,
+				1681C2172B1988D600975691 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1681C2202B1988D600975691 /* PBXTargetDependency */,
+			);
+			name = PatentSearchUITests;
+			productName = PatentSearchUITests;
+			productReference = 1681C2192B1988D600975691 /* PatentSearchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1681C1AD2B08605500975691 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					1681C1B42B08605500975691 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					1681C2072B185FE300975691 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 1681C1B42B08605500975691;
+					};
+					1681C2182B1988D600975691 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 1681C1B42B08605500975691;
+					};
+				};
+			};
+			buildConfigurationList = 1681C1B02B08605500975691 /* Build configuration list for PBXProject "PatentSearch" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1681C1AC2B08605500975691;
+			productRefGroup = 1681C1B62B08605500975691 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1681C1B42B08605500975691 /* PatentSearch */,
+				1681C2072B185FE300975691 /* PatentSearchTests */,
+				1681C2182B1988D600975691 /* PatentSearchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1681C1B32B08605500975691 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1681C1C02B08605800975691 /* Preview Assets.xcassets in Resources */,
+				1681C1D02B09B9D000975691 /* apilist.json in Resources */,
+				1681C1EE2B15A13A00975691 /* patent_info.plist in Resources */,
+				1681C1BD2B08605800975691 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1681C2062B185FE300975691 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1681C2172B1988D600975691 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1681C1B12B08605500975691 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1681C1E22B13F75D00975691 /* AsyncPDFView.swift in Sources */,
+				1681C1E82B146A0B00975691 /* ResultsViewModel.swift in Sources */,
+				1681C1D42B0FB13500975691 /* AdvancedSearchView.swift in Sources */,
+				1681C1D82B0FF9AD00975691 /* AdvancedDisplayView.swift in Sources */,
+				1681C1CD2B09A6A000975691 /* DetailedView.swift in Sources */,
+				1681C1C92B08EA5800975691 /* PatentModel.swift in Sources */,
+				1681C1DA2B1017A400975691 /* PatentFeedback.swift in Sources */,
+				1681C1E42B140D8200975691 /* SavedView.swift in Sources */,
+				1681C1D62B0FECEB00975691 /* SearchView.swift in Sources */,
+				1681C1CB2B08EC7F00975691 /* PatentStore.swift in Sources */,
+				1681C1BB2B08605500975691 /* ContentView.swift in Sources */,
+				1681C1B92B08605500975691 /* PatentSearchApp.swift in Sources */,
+				1681C1DC2B10197300975691 /* OnboardingView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1681C2042B185FE300975691 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1681C2252B198E6B00975691 /* DetailedViewTests.swift in Sources */,
+				1681C2142B19837400975691 /* PatentFeedbackTests.swift in Sources */,
+				1681C2122B19807C00975691 /* SearchViewTests.swift in Sources */,
+				1681C20B2B185FE300975691 /* PatentSearchTests.swift in Sources */,
+				1681C2272B19A14C00975691 /* AdvancedSearchViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1681C2152B1988D600975691 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1681C21E2B1988D600975691 /* PatentSearchUITestsLaunchTests.swift in Sources */,
+				1681C21C2B1988D600975691 /* PatentSearchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1681C20D2B185FE300975691 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1681C1B42B08605500975691 /* PatentSearch */;
+			targetProxy = 1681C20C2B185FE300975691 /* PBXContainerItemProxy */;
+		};
+		1681C2202B1988D600975691 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1681C1B42B08605500975691 /* PatentSearch */;
+			targetProxy = 1681C21F2B1988D600975691 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1681C1C12B08605800975691 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1681C1C22B08605800975691 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1681C1C42B08605800975691 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PatentSearch/Preview Content\"";
+				DEVELOPMENT_TEAM = D2T4V46CPM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.ios.PatentSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1681C1C52B08605800975691 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PatentSearch/Preview Content\"";
+				DEVELOPMENT_TEAM = D2T4V46CPM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.ios.PatentSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1681C20F2B185FE300975691 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D2T4V46CPM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.ios.PatentSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PatentSearch.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PatentSearch";
+			};
+			name = Debug;
+		};
+		1681C2102B185FE300975691 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D2T4V46CPM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.ios.PatentSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PatentSearch.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PatentSearch";
+			};
+			name = Release;
+		};
+		1681C2222B1988D700975691 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D2T4V46CPM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.ios.PatentSearchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PatentSearch;
+			};
+			name = Debug;
+		};
+		1681C2232B1988D700975691 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D2T4V46CPM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.ios.PatentSearchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PatentSearch;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1681C1B02B08605500975691 /* Build configuration list for PBXProject "PatentSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1681C1C12B08605800975691 /* Debug */,
+				1681C1C22B08605800975691 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1681C1C32B08605800975691 /* Build configuration list for PBXNativeTarget "PatentSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1681C1C42B08605800975691 /* Debug */,
+				1681C1C52B08605800975691 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1681C20E2B185FE300975691 /* Build configuration list for PBXNativeTarget "PatentSearchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1681C20F2B185FE300975691 /* Debug */,
+				1681C2102B185FE300975691 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1681C2212B1988D700975691 /* Build configuration list for PBXNativeTarget "PatentSearchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1681C2222B1988D700975691 /* Debug */,
+				1681C2232B1988D700975691 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1681C1AD2B08605500975691 /* Project object */;
+}
